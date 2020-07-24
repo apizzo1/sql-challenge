@@ -3,6 +3,7 @@
 --create all tables, with columns corresponding to the given csvs, and correct data types
 --could have specified VARCHAR length, but did not to ensure no data was inadvertently removed for this activity
 --make sure all tables have primary key and ensure primary key is unique
+--***I imported my tables in an appropriate order to avoid errors from foreign key restraints - see README***
 
 CREATE TABLE "departments" (
     "dept_no" varchar   NOT NULL,
