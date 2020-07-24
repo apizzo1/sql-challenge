@@ -10,3 +10,5 @@ Notes:
     d. salaries
     e. dept_emp
     f. dept_manager
+    
+3. I added the csv files to my gitignore file due to their size so these files are not located in my git repo
