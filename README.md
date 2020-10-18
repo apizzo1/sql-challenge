@@ -41,5 +41,10 @@ Once the database was created and the data was loaded, the following queries wer
 * List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 * In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
     
+### Importing the Database into Pandas
 
+To create some visualizations, a jupyter notebook was utilized, with a connection to the database using [SQL Alchemy](https://www.sqlalchemy.org/).
 
+Once the connection was made, the following visualizations were created:
+* A histogram to visualize the most common salary ranges for employees
+* A bar chart of average salary by title
