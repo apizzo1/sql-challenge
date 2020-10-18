@@ -8,25 +8,38 @@ To perform these actions, [PostgreSQL](https://www.postgresql.org/) was employed
 
 ### Steps to create Database and Load Data
 
-First, a new database was created in pgAdmin, named PH_Employees_db.
+1. First, a new database was created in pgAdmin, named PH_Employees_db.
 
-Next, the basic outline of the database tables was sketched using an entity relationship diagram. To do this, an [ERD Drawing tool](http://www.quickdatabasediagrams.com) was used. This diagram can be found in the EmployeeSQL folder and seen below. 
+2. Next, the basic outline of the database tables was sketched using an entity relationship diagram. To do this, an [ERD Drawing tool](http://www.quickdatabasediagrams.com) was used. This diagram can be found in the EmployeeSQL folder and seen below. 
 
 ![ERD](EmployeeSQL/ERD_PH_Employees_db.png)
 
 This diagram shows primary keys in each table and relationships between tables using foreign keys (signfied by lines connecting to corresponding parameter in related table). Two tables show 2 primary keys - in this case, this is a composite key, which takes 2 primary keys to uniquely identify the row. The data type can also be seen for each parameter in each table. Note: No length was specified for the varchar data types in these tables (such as varchar(30)). In normal practice, this should be specified to ensure imported data is not longer than an intended length.
 
-Once the ERD is sketched out, the ERD drawing tool allows the user to export a schema file, which can be used in pgAdmin to create the tables that will hold the employee data. This schema was used to create tables in PH_Employees_db.
+3. Once the ERD is sketched out, the ERD drawing tool allows the user to export a schema file, which can be used in pgAdmin to create the tables that will hold the employee data. This schema was used to create tables in PH_Employees_db.
 
-Once the tables were created, the data (contained in 6 csvs) was imported to the tables. Note: the tables must be imported in the following order, to avoid errors due to foreign key constraints:
+4. Once the tables were created, the data (contained in 6 csvs) was imported to the tables. Note: the tables must be imported in the following order, to avoid errors due to foreign key constraints:
     a. departments
     b. titles
     c. employees
     d. salaries
     e. dept_emp
     f. dept_manager
+
+Due to the csvs' file sizes, the files were not uploaded to this repository.
+
+### Querying the Database
+
+Once the database was created and the data was loaded, the following queries were performed:
+
+* List the following details of each employee: employee number, last name, first name, sex, and salary.
+* List first name, last name, and hire date for employees who were hired in 1986.
+* List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
+* List the department of each employee with the following information: employee number, last name, first name, and department name.
+* List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+* List all employees in the Sales department, including their employee number, last name, first name, and department name.
+* List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+* In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
     
 
-    
 
-4. I added the csv files to my gitignore file due to their size so these files are not located in my git repo
