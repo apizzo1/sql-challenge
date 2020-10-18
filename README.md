@@ -8,7 +8,7 @@ This challenge was to create a database to organize employee data from the 1980s
 
 First, the basic outline of the database tables was sketched using an entity relationship diagram. To do this, http://www.quickdatabasediagrams.com was used. This diagram can be found in the EmployeeSQL folder and seen below. 
 
-![ERD](EmployeeSQL/ERD_PH_Employees_db.PNG)
+![ERD](EmployeeSQL/ERD_PH_Employees_db.png)
 
 Notes:
 
