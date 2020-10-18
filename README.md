@@ -1,5 +1,15 @@
 # sql-challenge
 
+## Challenge Details
+
+This challenge was to create a database to organize employee data from the 1980s and 1990s at a fictitious company, Pewlett Hackard. Once the database was created, queries were performed to gain insights into the data.
+
+### Steps to create Database
+
+First, the basic outline of the database tables was sketched using an entity relationship diagram. To do this, http://www.quickdatabasediagrams.com was used. This diagram can be found in the EmployeeSQL folder and seen below. 
+
+![ERD](EmployeeSQL/ERD_PH_Employees_db.PNG)
+
 Notes:
 
 1. Created new database called PH_Employees_db
