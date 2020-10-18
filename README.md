@@ -41,10 +41,22 @@ Once the database was created and the data was loaded, the following queries wer
 * List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 * In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
     
-### Importing the Database into Pandas
+### Creating Visualizations using Connection to the Database
 
 To create some visualizations, a jupyter notebook was utilized, with a connection to the database using [SQL Alchemy](https://www.sqlalchemy.org/).
 
 Once the connection was made, the following visualizations were created:
 * A histogram to visualize the most common salary ranges for employees
 * A bar chart of average salary by title
+
+### Files Included
+
+* EmployeeSQL folder:
+    * ERD_PH_Employees_db.png - image of the entity relationship diagram
+    * Table_Schema.sql - file containing the schema needed to create database tables
+    * Data_Analysis.sql - file containing all database queries performed
+    * Bonus_SQL - jupyter notebook containing visualizations from the database. Note: the database connection will require the pgAdmin username and password to connect. These were saved in a config.py file, which was not uploaded to this repository. To replicate this, the user would need to create a config.py file, stored in the same folder as the jupyter notebook with the following format:
+    
+username = "your pgAdmin username"
+
+password = "your pgAdmin password"
